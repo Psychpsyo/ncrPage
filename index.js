@@ -104,7 +104,7 @@ function addObjectItem(div, item, amount) {
 //checking for enter presses in the input field
 document.getElementById("yourMoney").addEventListener("keyup", function(e) {
 	if (e.code == "Enter" && this.checkValidity()) {
-		ncrAmount = parseInt(this.value, 10);
+		ncrAmount = parseInt(this.value, 10) || 0;
 		fetch("https://api.coingecko.com/api/v3/simple/price?ids=neos-credits&vs_currencies=usd")
 		.then(response => response.json())
 		.then(ncrInfo => {
