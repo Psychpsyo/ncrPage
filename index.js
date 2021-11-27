@@ -87,7 +87,7 @@ let comparisonObjects = [
 ];
 
 function addObjectItem(div, item, amount) {
-	if (amount > 0 && div.childElementCount < 60) {
+	if (amount > 0 && div.childElementCount < 60 && div) {
 		amount--;
 		img = document.createElement("img");
 		img.src = item.icon;
@@ -109,10 +109,12 @@ document.getElementById("yourMoney").addEventListener("keyup", function(e) {
 		.then(response => response.json())
 		.then(ncrInfo => {
 			let ncrValue = ncrInfo["neos-credits"].usd;
-			//clear the list of comparisons
-			while (document.getElementById("rightSide").firstChild) {
-				document.getElementById("rightSide").firstChild.remove();
+			//clear the list of comparisons (while keeping the initial text div)
+			while (document.getElementById("rightSide").lastChild.id != "compTopDiv") {
+				document.getElementById("rightSide").lastChild.remove();
 			}
+			
+			document.getElementById("compTopDiv").textContent = + ncrAmount + "NCR can buy you any of these:"
 			
 			//add the updated comparisons
 			for (const item of comparisonObjects) {
@@ -122,7 +124,13 @@ document.getElementById("yourMoney").addEventListener("keyup", function(e) {
 					comparisonDiv.querySelector(".itemName").textContent = item.name.replace("{{amount}}", possibleAmount * item.multiplier);
 					comparisonDiv.querySelector(".storeLink").href = item.shopLink;
 					
+					//add the icons for the comparison
 					addObjectItem(comparisonDiv.querySelector(".iconDiv"), item, possibleAmount);
+					
+					//make the X button close the comparison
+					comparisonDiv.querySelector(".closingX").addEventListener("click", function() {
+						this.parentElement.parentElement.remove();
+					});
 					
 					document.getElementById("rightSide").appendChild(comparisonDiv);
 				}
