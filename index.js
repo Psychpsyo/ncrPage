@@ -69,6 +69,13 @@ let comparisonObjects = [
 		"multiplier": 1000,
 		"icon": "icons/vBucks.png",
 		"shopLink": "https://www.epicgames.com/store/en-US/p/fortnite--1000-v-bucks"
+	},
+	{
+		"name": "{{amount}} 55Gallon Drums of Lube",
+		"price": 1774.80,
+		"multiplier": 1,
+		"icon": "icons/lube.png",
+		"shopLink": "https://www.amazon.com/dp/B005MR3IVO"
 	}
 ];
 
