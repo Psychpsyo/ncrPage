@@ -55,6 +55,20 @@ let comparisonObjects = [
 		"multiplier": 1,
 		"icon": "icons/deathStar.png",
 		"shopLink": "https://www.bricklink.com/v2/catalog/catalogitem.page?S=75159-1"
+	},
+	{
+		"name": "{{amount}} Months of VRChat Plus",
+		"price": 9.99,
+		"multiplier": 1,
+		"icon": "icons/vrChatPlus.png",
+		"shopLink": "https://hello.vrchat.com/vrchatplus"
+	},
+	{
+		"name": "{{amount}} V-Bucks",
+		"price": 7.99,
+		"multiplier": 1000,
+		"icon": "icons/vBucks.png",
+		"shopLink": "https://www.epicgames.com/store/en-US/p/fortnite--1000-v-bucks"
 	}
 ];
 
