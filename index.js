@@ -76,6 +76,13 @@ let comparisonObjects = [
 		"multiplier": 1,
 		"icon": "icons/lube.png",
 		"shopLink": "https://www.amazon.com/dp/B005MR3IVO"
+	},
+	{
+		"name": "{{amount}} Samsung Smart Fridges",
+		"price": 4599,
+		"multiplier": 1,
+		"icon": "icons/smartFridge.png",
+		"shopLink": "https://www.samsung.com/us/home-appliances/refrigerators/4-door-flex/22-cu--ft--counter-depth-4-door-flex--with-21-5-in--connected-touch-screen-family-hub--refrigerator-rf22n9781sr-aa/"
 	}
 ];
 
