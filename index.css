@@ -1,0 +1,109 @@
+html {
+	--light-cream: rgb(255,250,237);
+	--cream: rgb(255,237,183);
+	--dark-cream: rgb(204,193,163);
+	--invalid-red: rgb(255,135,135);
+	
+	font-family: sans-serif;
+	background-color: var(--cream);
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	padding: 1em;
+	background-color: var(--light-cream);
+}
+
+#yourMoneyDiv {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: .5em;
+	font-weight: bold;
+}
+
+input {
+	border: none;
+	border-radius: .5em;
+	background-color: var(--dark-cream);
+	padding: .3em;
+}
+
+input:invalid {
+	background-color: var(--invalid-red);
+}
+
+p {
+	margin-right: 10%;
+}
+p:first-of-type {
+	margin-top: 0;
+}
+p:last-of-type {
+	margin-bottom: 0;
+}
+
+#mainPage {
+	display: flex;
+}
+
+#nothingYetDiv {
+	margin: 1em;
+	color: rgba(0, 0, 0, .5);
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.compHolder {
+	max-width: 50%;
+	box-sizing: border-box;
+	width: 50%;
+}
+
+.comparison {
+	background-color: var(--light-cream);
+	border-radius: 1em;
+	margin: 1em;
+}
+
+.compTitle {
+	background-color: white;
+	border-top-right-radius: 1em;
+	border-top-left-radius: 1em;
+	padding: 1em;
+	font-weight: bold;
+}
+
+.compBody {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .2em;
+	padding: 1em;
+}
+
+.iconDiv {
+	align-items: end;
+}
+
+.iconDiv > img {
+	width: 2em;
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+}
+
+.storeLink {
+	font-size: .7em;
+}
