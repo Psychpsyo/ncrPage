@@ -48,6 +48,13 @@ let comparisonObjects = [
 		"multiplier": 1,
 		"icon": "icons/bible.png",
 		"shopLink": "https://bookshop.org/books/holy-bible-king-james-version-kjv/9781622456338"
+	},
+	{
+		"name": "{{amount}} Lego Death Stars (Sealed)",
+		"price": 657.53,
+		"multiplier": 1,
+		"icon": "icons/deathStar.png",
+		"shopLink": "https://www.bricklink.com/v2/catalog/catalogitem.page?S=75159-1"
 	}
 ];
 
