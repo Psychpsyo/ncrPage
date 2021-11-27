@@ -12,7 +12,7 @@ let comparisonObjects = [
 		"price": 6.95,
 		"multiplier": 1,
 		"icon": "icons/nothing.png",
-		"shopLink": "https://www.amazon.com/dp/B019HDSCPU/"
+		"shopLink": "https://www.amazon.com/dp/B019HDSCPU"
 	},
 	{
 		"name": "{{amount}} Copies of Minecraft",
