@@ -83,8 +83,44 @@ let comparisonObjects = [
 		"multiplier": 1,
 		"icon": "icons/smartFridge.png",
 		"shopLink": "https://www.samsung.com/us/home-appliances/refrigerators/4-door-flex/22-cu--ft--counter-depth-4-door-flex--with-21-5-in--connected-touch-screen-family-hub--refrigerator-rf22n9781sr-aa/"
+	},
+	{
+		"name": "{{amount}} .pizza Domains",
+		"price": 8.98,
+		"multiplier": 1,
+		"icon": "icons/pizza.png",
+		"shopLink": "https://www.namecheap.com/domains/registration/gtld/pizza/"
+	},
+	{
+		"name": "{{amount}} Bowling Balls",
+		"price": 254.99,
+		"multiplier": 1,
+		"icon": "icons/bowlingBall.png",
+		"shopLink": "https://www.bowling.com/products/storm-trend-2.htm"
+	},
+	{
+		"name": "{{amount}} Christmas Trees",
+		"price": 793.02,
+		"multiplier": 1,
+		"icon": "icons/christmasTree.png",
+		"shopLink": "https://www.amazon.de/dp/B09KV5TBDT"
+	},
+	{
+		"name": "{{amount}} Blank Casettes",
+		"price": 9.51,
+		"multiplier": 2,
+		"icon": "icons/cassette.png",
+		"shopLink": "https://www.amazon.com/dp/B000001OKK"
+	},
+	{
+		"name": "{{amount}} Months of the 'The Curator' Neos Patreon Tier",
+		"price": 72,
+		"multiplier": 1,
+		"icon": "icons/patreon.png",
+		"shopLink": "https://www.patreon.com/neosvr"
 	}
 ];
+
 
 function addObjectItem(div, item, amount) {
 	if (amount > 0 && div.childElementCount < 60 && div) {
