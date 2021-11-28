@@ -118,9 +118,15 @@ let comparisonObjects = [
 		"multiplier": 1,
 		"icon": "icons/patreon.png",
 		"shopLink": "https://www.patreon.com/neosvr"
+	},
+	{
+		"name": "{{amount}} Datasets for Kroger Store Locations in the USA",
+		"price": 105,
+		"multiplier": 1,
+		"icon": "icons/krogerData.png",
+		"shopLink": "https://www.scrapehero.com/store/product/kroger-store-locations-in-the-usa/"
 	}
 ];
-
 
 function addObjectItem(div, item, amount) {
 	if (amount > 0 && div.childElementCount < 60 && div) {
