@@ -1,3 +1,4 @@
+//variable definitions
 let ncrAmount = 0;
 let comparisonObjects = [
 	{
@@ -128,6 +129,7 @@ let comparisonObjects = [
 	}
 ];
 
+//adds a single icon for a comparison in the right pane of the site
 function addObjectItem(div, item, amount) {
 	if (amount > 0 && div.childElementCount < 60 && div) {
 		amount--;
