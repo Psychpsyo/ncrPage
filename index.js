@@ -126,6 +126,13 @@ let comparisonObjects = [
 		"multiplier": 1,
 		"icon": "icons/krogerData.png",
 		"shopLink": "https://www.scrapehero.com/store/product/kroger-store-locations-in-the-usa/"
+	},
+	{
+		"name": "{{amount}} Chocolate Coins",
+		"price": 15,
+		"multiplier": 90,
+		"icon": "icons/chocolateCoins.png",
+		"shopLink": "https://www.amazon.com/dp/B007N9M2G6"
 	}
 ];
 
